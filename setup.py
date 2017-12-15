@@ -22,6 +22,6 @@ setup(
     packages=['bulrush'],
     test_suite='tests',
     tests_require=['pelican'],
-    url='https://github.com/textbook/bulrush',
-    version='0.1.0',
+    url='https://github.com/yostos/bulrush',
+    version='0.1.1',
 )
