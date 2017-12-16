@@ -3,6 +3,8 @@ from setuptools import setup
 setup(
     author='Toshiyuki Yoshida',
     author_email='yostos@yostos.org',
+    maintainer='Toshiyuki Yoshida',
+    maintainer_email='yostos@yostos.org',
     classifiers=[
         'Development Status :: 4 - Beta',
         'Framework :: Pelican :: Themes',
