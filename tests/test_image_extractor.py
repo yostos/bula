@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from bulrush import extract_images
+from bula import extract_images
 
 
 class ImageExtractorTest(TestCase):

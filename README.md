@@ -1,9 +1,9 @@
-Bulrush
+Bula
 =======
 
 A [Bulma][1]-based [Pelican][2] blog theme; clean, flexible and responsive.
 
- ![Screenshot - Bulrush at 1440px][13]
+This theme is based on Jonathan Sharpe's [bulrush][25] theme.
 
 The icons are from [Font Awesome][3] by Dave Gandy. The pure HTML/CSS "Fork me
 on GitHub" ribbon is based on [`github-fork-ribbon-css`][4] by Simon Whitaker; I
@@ -34,11 +34,11 @@ and MailChimp.
 Installation
 ------------
 
-Bulrush is available via the [Python Package Index][22], so you can install it
+Bula is available via the [Python Package Index][22], so you can install it
 with:
 
 ```bash
-pip install bulrush
+pip install bula
 ```
 
 The main exports from the module are:
@@ -50,11 +50,11 @@ The main exports from the module are:
 You can use them in your `pelicanconf.py` as follows:
 
 ```python
-import bulrush
+import bula
 
-THEME = bulrush.PATH
-JINJA_ENVIRONMENT = bulrush.ENVIRONMENT
-JINJA_FILTERS = bulrush.FILTERS
+THEME = bula.PATH
+JINJA_ENVIRONMENT = bula.ENVIRONMENT
+JINJA_FILTERS = bula.FILTERS
 ```
 
 ### Other Requirements
@@ -78,11 +78,11 @@ PLUGINS = ['assets']
 ### Alternative
 
 If you don't want to install the theme from PyPI you can simply give Pelican a
-relative path to the inner `bulrush/` directory. For example, add `bulrush` as
+relative path to the inner `bula/` directory. For example, add `bula` as
 a submodule and set:
 
 ```python
-THEME = 'bulrush/bulrush'
+THEME = 'bula/bula'
 ```
 
 In this case you will need to configure the environment and filters yourself
@@ -93,20 +93,20 @@ Additional Screenshots
 
  - 480 x 480px (mobile):
 
-     ![Screenshot - Bulrush at 480px][11]
+     ![Screenshot - Bula at 480px][11]
 
  - 840 x 480px (tablet):
 
-     ![Screenshot - Bulrush at 840px][12]
+     ![Screenshot - Bula at 840px][12]
 
  - 980 x 480px (desktop):
 
-     ![Screenshot - Bulrush at 980px][10]
+     ![Screenshot - Bula at 980px][10]
 
 Settings
 --------
 
-As well as the [basic settings][14], Bulrush supports the following options in
+As well as the [basic settings][14], Bula supports the following options in
 your `pelicanconf.py`:
 
 | Setting name | What does it do? |
@@ -205,20 +205,6 @@ EXTRA_PATH_METADATA = {
 }
 ```
 
-In use
-------
-
-Here are few current users of Bulrush (or modified versions of it):
-
- - [textbook](http://blog.jonrshar.pe/)
- - [Simon Says](https://simonsays.neocities.org/)
- - [CodeRobot](http://coderobot.downley.net/)
- - [chair6.net](http://chair6.net/)
- - [Just Numbers and Things](http://justnumbersandthings.com/)
- - [بلاگ باهم](https://baaham.net/blog/) (in Persian!)
-
-If you'd like to be featured here (or are and would prefer not to be), feel
-free to submit a [pull request][18].
 
   [1]: http://bulma.io/
   [2]: http://docs.getpelican.com/en/stable/
@@ -232,15 +218,15 @@ free to submit a [pull request][18].
   [10]: ./screenshot-980px.png
   [11]: ./screenshot-480px.png
   [12]: ./screenshot-840px.png
-  [13]: ./screenshot-1440px.png
   [14]: http://docs.getpelican.com/en/3.6.3/settings.html#basic-settings
   [15]: https://github.com/getpelican/pelican-plugins/tree/master/assets
   [16]: http://lesscss.org/
-  [17]: https://github.com/textbook/bulrush/blob/master/templates/social.html
+  [17]: https://github.com/textbook/bula/blob/master/templates/social.html
   [18]: https://help.github.com/articles/about-pull-requests/
   [19]: http://kb.mailchimp.com/accounts/billing/add-or-remove-monkeyrewards
   [20]: http://eepurl.com/cNv6Rb
   [21]: http://kb.mailchimp.com/lists/signup-forms/add-a-signup-form-to-your-website
-  [22]: https://pypi.python.org/pypi/bulrush
+  [22]: https://pypi.python.org/pypi/bula
   [23]: http://fontawesome.io/icon/file-text-o/
   [24]: ./screenshot-social.png
+  [25]: https://github.com/textbook/bulrush

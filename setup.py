@@ -1,27 +1,27 @@
 from setuptools import setup
 
 setup(
-    author='Jonathan Sharpe',
-    author_email='mail@jonrshar.pe',
+    author='Toshiyuki Yoshida',
+    author_email='yostos@yostos.org',
     classifiers=[
         'Development Status :: 4 - Beta',
         'Framework :: Pelican :: Themes',
         'License :: OSI Approved :: ISC License (ISCL)',
         'Programming Language :: Python :: 3 :: Only',
     ],
-    description='Bulrush theme for Pelican',
+    description='Bula theme for Pelican',
     install_requires=['markupsafe', 'webassets', 'yuicompressor'],
     license='ISC',
-    name='bulrush',
+    name='bula',
     package_data={
-        'bulrush': [
+        'bula': [
             'templates/*.html',
             'static/css/*.less',
         ]
     },
-    packages=['bulrush'],
+    packages=['bula'],
     test_suite='tests',
     tests_require=['pelican'],
     url='https://github.com/yostos/bulrush',
-    version='0.1.3',
+    version='0.1.0',
 )

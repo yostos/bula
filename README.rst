@@ -1,4 +1,4 @@
-Bulrush
+Bula
 =======
 
 A `Bulma`_-based `Pelican`_ blog theme; clean, flexible and responsive.

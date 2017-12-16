@@ -6,7 +6,7 @@ from pelican.contents import Article
 from pelican.settings import DEFAULT_CONFIG
 from pelican.urlwrappers import Category, Author
 
-from bulrush import generate_jsonld_schema
+from bula import generate_jsonld_schema
 
 ARTICLE_URL = 'article-name.html'
 AUTHOR = 'Hans Muster'

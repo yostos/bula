@@ -10,7 +10,7 @@ __all__ = ['ENVIRONMENT', 'FILTERS', 'PATH']
 ENVIRONMENT = {
     'extensions': ['webassets.ext.jinja2.AssetsExtension', 'jinja2.ext.with_'],
 }
-"""The required Jinja environment for the Bulrush theme."""
+"""The required Jinja environment for the Bula theme."""
 
 
 FILTERS = dict(
@@ -18,9 +18,9 @@ FILTERS = dict(
     license=generate_license,
     schema=generate_jsonld_schema,
 )
-"""The filters defined by the Bulrush theme."""
+"""The filters defined by the Bula theme."""
 
 
 # https://github.com/getpelican/pelican/issues/1564#issuecomment-282136049
 PATH = str(Path(__file__).parent)
-"""The path to the Bulrush theme directory."""
+"""The path to the Bula theme directory."""

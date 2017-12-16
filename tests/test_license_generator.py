@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from bulrush import generate_license
+from bula import generate_license
 
 
 class LicenseNameGeneratorTest(TestCase):
