@@ -6,7 +6,7 @@ _HTML = '''
   <li>
     <a rel="license" href="{url}">
       <span class="icon is-small">
-        <i class="fa fa-{icon} fa-fw"></i>
+        <i class="fab fa-{icon} fa-fw"></i>
       </span>
       <span>{content}</span>
     </a>
