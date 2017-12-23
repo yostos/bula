@@ -69,7 +69,7 @@
                             {% for pg in pages %}
                             <li><a {% if pg == page %}class="is-active"{% endif %}
                             href="{{ SITEURL }}/{{ pg.url }}">
-                                    <span class="icon is-small"><i class="fa fa-book"></i></span>
+                                    <span class="icon is-small"><i class="fas fa-book"></i></span>
                                     <span class="link-text">{{ pg.title }}</span>
                                 </a></li>
                                 {% endfor %}
@@ -77,14 +77,14 @@
                                 {% if FEED_ALL_ATOM %}
                                 <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}"
                                        type="application/atom+xml" rel="alternate">
-                                        <span class="icon is-small"><i class="fa fa-rss"></i></span>
+                                        <span class="icon is-small"><i class="fas fa-rss"></i></span>
                                         <span class="link-text">Atom Feed</span>
                                     </a></li>
                                     {% endif %}
                                     {% if FEED_ALL_RSS %}
                                     <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}"
                                            type="application/rss+xml" rel="alternate">
-                                            <span class="icon is-small"><i class="fa fa-rss"></i></span>
+                                            <span class="icon is-small"><i class="fas fa-rss"></i></span>
                                             <span class="link-text">RSS Feed</span>
                                         </a></li>
                                         {% endif %}
@@ -95,7 +95,7 @@
                         <ul class="menu-list">
                             {% for name, link in LINKS %}
                             <li><a href="{{ link }}">
-                                    <span class="icon is-small"><i class="fa fa-globe fa-fw"></i></span>
+                                    <span class="icon is-small"><i class="fas fa-globe fa-fw"></i></span>
                                     <span class="link-text">{{ name }}</span>
                                 </a></li>
                                 {% endfor %}
@@ -118,8 +118,8 @@
                 {% if SITESUBTITLE %} <p class="subtitle">{{ SITESUBTITLE }}</p>{% endif %}
                 <p><a href="https://github.com/yostos/bula">Bula</a> theme for
                 <a href="https://blog.getpelican.com/">Pelican</a>
-                | <span class="icon is-small"><i class="fa fa-html5"></i></span> HTML 5
-                | <span class="icon is-small"><i class="fa fa-css3"></i></span> CSS 3
+                | <span class="icon is-small"><i class="fab fa-html5"></i></span> HTML 5
+                | <span class="icon is-small"><i class="fab fa-css3"></i></span> CSS 3
                 </p>
             </div>
             {% include 'github.html' %}
