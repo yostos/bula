@@ -1,12 +1,12 @@
 <footer class="post-info">
   <abbr class="published" title="{{ article.date.isoformat() }}">
-    Published <span class="is-info">{{ article.locale_date }}</span>
+    Published&nbsp;<span class="is-info">{{ article.locale_date }}</span>
     in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
   </abbr>
   {% if article.modified %}
     <br />
     <abbr class="modified" title="{{ article.modified.isoformat() }}">
-      Updated {{ article.locale_modified }}
+      Updated&nbsp;&nbsp;{{ article.locale_modified }}
     </abbr>
   {% endif %}
 
