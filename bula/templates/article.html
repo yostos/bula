@@ -14,18 +14,7 @@
         {% include 'article_infos.html' %}
         <div class="section">{{ article.content }}</div>
 
-
-        {% if article.related_posts %}
-        <hr />
-        <div class="section" id="idx">
-            <h2>関連記事</h2>
-            <ul>
-                {% for related_post in article.related_posts %}
-                <li><a href="/{{ related_post.url }}">{{ related_post.title }}</a></li>
-                {% endfor %}
-            </ul>
-        </div>
-        {% endif %}
+        {% include 'related_posts.html' %}
 
         {% if DISQUS_SITENAME and SITEURL and article.status != "draft" %}
         <div class="comments">
