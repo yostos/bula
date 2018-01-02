@@ -5,6 +5,22 @@
 
 @import "highlight";
 
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "palt";
+}
+
+@media scree and (-webkit-min-device-pixel-ratio:0) {
+    ::i-block-chrome, body {
+        font-feature-settings: "pkna";
+    }
+}
+
 body,
 button,
 input,
