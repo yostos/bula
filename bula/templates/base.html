@@ -5,8 +5,6 @@
         <meta name="viewport" content="width=device-width">
         <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
         <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
-        <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
         {% assets filters="less,yui_css", output="css/main.%(version)s.css", "css/main.less" %}
         <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
@@ -14,7 +12,7 @@
         <style media="print">.is-hidden-print{display:none !important}</style>
         {% for extra_path in EXTRA_PATH_METADATA.values() %}
         {% if extra_path.get('path', '').endswith('.css') %}
-        <link rel="stylesheet" href="{{ SITEURL }}/{{ extra_path['path'] }}">
+        <link rel="stylesheet" href="/{{ extra_path['path'] }}">
         {% endif %}
         {% endfor %}
         {% block tags %}
