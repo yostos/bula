@@ -4,13 +4,7 @@
 @primary: #2077b2;
 
 @import "highlight";
-
-
-@media scree and (-webkit-min-device-pixel-ratio:0) {
-    ::i-block-chrome, body {
-        font-feature-settings: "pkna";
-    }
-}
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
 body,
 button,
@@ -20,6 +14,10 @@ textarea {
     font-family: "Noto Sans", "Noto Sans Japanese", -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "游ゴシック  Medium", Meiryo, sans-serif; 
 }
 
+pre,
+code {
+    font-family: 'Source Code Pro', monospace;
+}
 
 article .section {
     padding: 1.5rem 2% 1.5rem 2%;
