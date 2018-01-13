@@ -105,6 +105,18 @@
                         <p class="menu-label">License</p>
                         {{ LICENSE | license | safe }}
                         {% endif %}
+                        {% if GOOGLE_ADSENSE_CLIENT %}
+                            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                            <ins class="adsbygoogle"
+                                style="display:block"
+                                data-ad-format="fluid"
+                                data-ad-layout-key="-8b+1j-dd+eh+h2"
+                                data-ad-client="{{ GOOGLE_ADSENSE_CLIENT }}"
+                                data-ad-slot="{{GOOGLE_ADSENSE_SLOT}}"></ins>
+                            <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        {% endif %}
                     </aside>
                 </div>
             </div>
@@ -112,14 +124,14 @@
 
         <footer class="footer">
             <div class="container">
-            <div class="content has-text-centered">
-                {% if SITESUBTITLE %} <p class="subtitle">{{ SITESUBTITLE }}</p>{% endif %}
-                <p><a href="https://github.com/yostos/bula">Bula</a> theme for
-                <a href="https://blog.getpelican.com/">Pelican</a>
-                | <span class="icon is-small"><i class="fab fa-html5"></i></span> HTML 5
-                | <span class="icon is-small"><i class="fab fa-css3"></i></span> CSS 3
-                </p>
-            </div>
+                <div class="content has-text-centered">
+                    {% if SITESUBTITLE %} <p class="subtitle">{{ SITESUBTITLE }}</p>{% endif %}
+                    <p><a href="https://github.com/yostos/bula">Bula</a> theme for
+                    <a href="https://blog.getpelican.com/">Pelican</a>
+                    | <span class="icon is-small"><i class="fab fa-html5"></i></span> HTML 5
+                    | <span class="icon is-small"><i class="fab fa-css3"></i></span> CSS 3
+                    </p>
+                </div>
             </div>
             {% include 'github.html' %}
         </footer>
