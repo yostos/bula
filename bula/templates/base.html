@@ -7,6 +7,17 @@
         <meta name="google-site-verification" content="{{ SITE_VERIFICATION }}" />
         {% endif %}
         <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+
+    {% if TAG_NAMAGER %}
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','{{ TAG_MANAGER }}');</script>
+    <!-- End Google Tag Manager -->
+    {% endif %}
+
         <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/{{ BULMA_VERSION }}/css/bulma.min.css">
         {% assets filters="less,yui_css", output="css/main.%(version)s.css", "css/main.less" %}
@@ -35,6 +46,13 @@
     </head>
 
     <body id="index" class="home">
+
+        {% if TAG_MANAGER %}
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ TAG_MANAGER }}"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        {% endif %}
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <a class="navbar-item title {% if output_file == "index.html" %} is-active{% endif %}" href="{{ SITEURL }}/">
