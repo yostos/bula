@@ -7,7 +7,7 @@
         <meta name="google-site-verification" content="{{ SITE_VERIFICATION }}" />
         {% endif %}
         <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
-
+        {% include 'analytics.html' %}
     {% if TAG_MANAGER %}
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -163,7 +163,6 @@
             {% include 'github.html' %}
         </footer>
         {% include 'adsense.html' %}
-        {% include 'analytics.html' %}
         {% include 'disqus_script.html' %}
         <script type="text/javascript">
             document.addEventListener('DOMContentLoaded', function () {
