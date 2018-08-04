@@ -23,7 +23,15 @@
         {% assets filters="less,yui_css", output="css/main.%(version)s.css", "css/main.less" %}
         <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
         {% endassets %}
-
+        {% if GOOGLE_ADSENSE_CLIENT %}
+         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+         <script>
+             (adsbygoogle = window.adsbygoogle || []).push({
+                 google_ad_client: "{{GOOGLE_ADSENSE_CLIENT}}",
+                 enable_page_level_ads: true
+             });
+         </script>
+         {% endif %}
         <style media="print">.is-hidden-print{display:none !important}</style>
         {% for extra_path in EXTRA_PATH_METADATA.values() %}
         {% if extra_path.get('path', '').endswith('.css') %}
