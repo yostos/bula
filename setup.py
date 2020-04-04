@@ -25,5 +25,5 @@ setup(
     test_suite='tests',
     tests_require=['pelican'],
     url='https://github.com/yostos/bula',
-    version='0.2.52',
+    version='0.2.54',
 )

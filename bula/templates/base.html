@@ -131,6 +131,9 @@
                         {% if SOCIAL %}
                         {% include 'social.html' %}
                         {% endif %}
+                        {% if USER_INCLUDE %}
+                        {% include 'user_include.html'}
+                        {% endif %}
                         {% if LICENSE %}
                         <p class="menu-label">License</p>
                         {{ LICENSE | license | safe }}
